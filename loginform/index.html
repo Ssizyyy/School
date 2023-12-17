@@ -5,35 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
-    <section>
-      <div class="form-box">
-        <div class="form">
-          <h1>Login</h1>
-          <form action="https://ssizyyy.github.io/School/">
-            <div class="input-box">
-              <ion-icon name="mail-outline"></ion-icon>
-              <input type="text" required />
-              <label for="">Email</label>
+    <div class="wrapper">
+      <div class="content">
+        <section>
+          <div class="form-box">
+            <div class="form">
+              <h1>Login</h1>
+              <form action="">
+                <div class="input-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="text" required />
+                  <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <input type="password" required />
+                  <label for="">Password</label>
+                </div>
+                <div class="remember-me">
+                  <label for="remember-me">
+                    <input type="checkbox" name="remember" id="remember-me" />Remember
+                    Me
+                  </label>
+                </div>
+                <button type="submit">Log In</button>
+              </form>
             </div>
-            <div class="input-box">
-              <ion-icon name="lock-closed-outline"></ion-icon>
-              <input type="password" required />
-              <label for="">Password</label>
-            </div>
-            <div class="remember-me">
-              <label for="remember-me">
-                <input type="checkbox" name="remember" id="remember-me" />Remember
-                Me
-              </label>
-            </div>
-            <button type="submit">Log In</button>
-          </form>
-        </div>
+          </div>
+        </section>
       </div>
-  </section>
-
+      <div class="background">
+        <div id="cool-background"></div>
+        <script src="script.js"></script>
+      </div>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
