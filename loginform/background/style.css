@@ -1,4 +1,4 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
 }
@@ -89,4 +89,4 @@ section .row:nth-child(even) div:nth-child(even) {
   100% {
     transform: translateX(0);
   }
-} */
+}
