@@ -40,6 +40,7 @@ i:hover {
 section .row div {
   animation: animate1 80s linear infinite;
   animation-delay: -80s;
+  padding-left: 10px;
 }
 
 section .row div:nth-child(2) {
@@ -67,6 +68,7 @@ section .row div:nth-child(2) {
 section .row:nth-child(even) div {
   animation: animate3 80s linear infinite;
   animation-delay: -80s;
+  margin-right: 16px;
 }
 
 section .row:nth-child(even) div:nth-child(even) {

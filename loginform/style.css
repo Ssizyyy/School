@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
   margin: 0;
@@ -14,14 +14,15 @@
 {
 position: relative;
 z-index: 100;
+pointer-events: none;
 }
+
 .background
 {
-position: absolute;
-z-index: -100;
-top: 0;
-left: 0;
+  position: absolute;
+  pointer-events: all;
 }
+
 #cool-background
 {
   position: fixed;
@@ -42,6 +43,7 @@ left: 0;
   background: transparent;
   background-size: cover ;
   background-position: center;
+
 }
 .form-box{
   position: relative;
@@ -62,6 +64,7 @@ h1{
   margin: 30px 0;
   width: 310px;
   border-bottom: 2px solid white;
+  pointer-events: all;
 }
 .input-box label{
   position: absolute;
@@ -70,7 +73,6 @@ h1{
   transform: translateY(-50%);
   color: white;
   font-size: 1em;
-  pointer-events: none;
   transition: .35s;
 }
 
@@ -103,10 +105,12 @@ input:valid ~ label{
   color: white;
   display: flex;
   justify-content: left;
+  pointer-events: all;
 }
 
 .remember-me input{
   margin-right: 3px;
+  pointer-events: all;
 }
 
 button{
@@ -119,14 +123,7 @@ button{
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-}
-
-
-
-
-* {
-  padding: 0;
-  margin: 0;
+  pointer-events: all;
 }
 
 section {
@@ -166,6 +163,7 @@ i:hover {
 section .row div {
   animation: animate1 80s linear infinite;
   animation-delay: -80s;
+  padding-left: 15px;
 }
 
 section .row div:nth-child(2) {
@@ -193,6 +191,7 @@ section .row div:nth-child(2) {
 section .row:nth-child(even) div {
   animation: animate3 80s linear infinite;
   animation-delay: -80s;
+  padding-left: 15px;
 }
 
 section .row:nth-child(even) div:nth-child(even) {
